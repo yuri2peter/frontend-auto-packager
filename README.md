@@ -13,18 +13,7 @@ cd upload
 git clone <your html dist repository>
 ```
 
-4. 编写工程打包脚本 `build.sh`
-
-```sh
-#!/bin/bash
-
-# 定位到工作目录
-cd /myproject
-# 打包项目
-npm run build
-```
-
-5. 填写配置文件 config.json
+4. 填写配置文件 config.json
 
 ```json
 {
@@ -34,7 +23,7 @@ npm run build
 ```
 
 - `uploadDir`指的是第 3 步克隆后生成的目录名
-- `distPath`指的是打包脚本完成后生成的 dist 目录的绝对路径
+- `distPath`指的是打包完成后生成的 dist 目录的绝对路径
 
 ## 使用
 
@@ -42,10 +31,10 @@ npm run build
 
 ## 原理 & 工作流
 
+- 自行处理项目打包，生成`dist`目标目录
 - 删除`temp/.git`
 - 拷贝`upload/www.html.com/.git`至`temp/.git`
 - 清空`upload`目录
-- 执行`build.sh`脚本打包 html，生成 dist 目录
 - 拷贝`dist`至`upload`目录下，重命名为`www.html.com`
 - 拷贝`temp/.git`至`upload/www.html.com/.git`
 - 在执行`www.html.com`目录下执行 git 命令，完成`push`动作
