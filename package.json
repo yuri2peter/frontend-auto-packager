@@ -4,6 +4,8 @@
   "description": "自动执行脚本命令完成，打包、复制、上传。",
   "main": "index.js",
   "scripts": {
+    "start": "node main.js",
+    "init": "node init.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

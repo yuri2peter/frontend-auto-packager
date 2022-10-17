@@ -1,5 +1,5 @@
 node_modules
-temp
-upload
-dist
-build.sh
+/temp
+/upload
+/build.sh
+/config.json
