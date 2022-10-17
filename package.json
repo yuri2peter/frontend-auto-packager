@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/yuri2peter/frontend-auto-packager#readme",
   "dependencies": {
+    "@yuri2/exec-shell": "^0.2.0",
     "fs-extra": "^10.1.0"
   }
 }
