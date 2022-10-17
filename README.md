@@ -1,7 +1,9 @@
 # frontend-auto-packager
 
 自动执行脚本命令完成html的复制、上传。
+
 很适合以下工作流：
+
 `vite`编写前端并打包 =>包`push`至`github`的某个html仓库 => `netlify`监听html仓库更新网站
 
 ## 准备工作
