@@ -4,6 +4,7 @@ const { execShellScriptContent } = require("@yuri2/exec-shell");
 
 async function main() {
   const config = getConfig();
+  console.log("========= 打包上传工具 ==========");
   console.log("处理临时文件");
   // 删除`temp/.git`;
   await fs.remove(getPath("temp/.git"));
